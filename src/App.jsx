@@ -12,8 +12,8 @@ function App() {
     <>
       <Router>
         <div style={{}}>
-          <div style={{ position: "relative", height: "100vh" }}>
-            <div
+          {/* <div style={{ position: "relative", height: "100vh" }}> */}
+            {/* <div
               style={{
                 position: "absolute",
                 top: 0,
@@ -22,21 +22,18 @@ function App() {
                 height: "100%",
                 zIndex: 1,
               }}
-            >
+            > */}
               <Navbar />
-              <LoadingBar
-                height={3}
-                color="#f11946"
-                progress={progress}
-              />
+              <LoadingBar height={3} color="#f11946" progress={progress} />
               {/* <ParticlesBackground /> */}
 
-              <Routes>
-                <Route
+              {/* <Routes> */}
+                {/* <Route
                   exact
                   path="/"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="general"
                       pageSize={20}
                       q={"general"}
@@ -49,7 +46,8 @@ function App() {
                   exact
                   path="/technology"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="technology"
                       pageSize={20}
                       q={"technology"}
@@ -62,7 +60,8 @@ function App() {
                   exact
                   path="/science"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="science"
                       pageSize={20}
                       q={"science"}
@@ -75,7 +74,8 @@ function App() {
                   exact
                   path="/sports"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="sports"
                       pageSize={20}
                       q={"sports"}
@@ -88,7 +88,8 @@ function App() {
                   exact
                   path="/business"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="business"
                       pageSize={20}
                       q={"business"}
@@ -101,7 +102,8 @@ function App() {
                   exact
                   path="/health"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="health"
                       pageSize={20}
                       q={"health"}
@@ -114,7 +116,8 @@ function App() {
                   exact
                   path="/entertainment"
                   element={
-                    < News  setProgress={setProgress}
+                    <News
+                      setProgress={setProgress}
                       key="entertainment"
                       pageSize={20}
                       q={"entertainment"}
@@ -123,17 +126,18 @@ function App() {
                     />
                   }
                 />
-              </Routes>
-            </div>
-            {/* <News
-        pageSize={20}
-        q={"entertainment"}
-        country={"us"}
-        newsType={"top-headlines"}
-      /> */}
-          </div>
+              </Routes> */}
+            {/* </div> */}
+          {/* </div> */}
         </div>
       </Router>
+
+      <News
+        pageSize={20}
+        // q={"}
+        country={"us"}
+        newsType={"top-headlines"}
+      />
     </>
   );
 }
